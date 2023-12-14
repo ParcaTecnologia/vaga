@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const metadata: Metadata = {
   title: 'desafio',
-  description: '',
+  description: 'Desafio Github',
 };
 
 export default function RootLayout({
