@@ -53,11 +53,11 @@ V
 
 
 ## Desafios enfrentados
-- não tive problemas para desenvolver a aplicação pois ja tenho experiencias com manipulação de Api
+- não tive problemas para desenvolver a aplicação pois ja tenho experiencias com manipulação de Api´s
 
 ## melhorias
 - a melhoria do frontend da aplicação, podendo criar um escopo melhor usando figma e fazer o desenvolvimento usando tailwindcss
-- adicionar um banco de dados para que cada usuario logado tenha seu proprio historico de pesquisasm isso pode ser feito usando MongoDb
+- adicionar um banco de dados para que cada usuario logado tenha seu proprio historico de pesquisas isso pode ser feito usando MongoDb
 
 
 ## Agradeçimento
@@ -66,4 +66,4 @@ Agradeço à equipe da Parça Serviços Financeiros pela oportunidade proporcion
 
 Atenciosamente,
 
-[Fernando pereira]
+Fernando pereira
