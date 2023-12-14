@@ -7,7 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Users from '@/Routes/Users';
 import UserInfo from '@/Routes/UserInfo';
 import Navbar from '@/components/Navbar';
-import { ClerkProvider } from '@clerk/nextjs';
+
+import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,23 +23,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-    <BrowserRouter>
-      <html lang="ptbr">
-        <body className=" bg-gray-900 text-white">
-          <div className="bg-gray-800">
-            <Navbar />
-          </div>
-          <div className="bg-gray-900">
-            
-            <Routes>
-              <Route path="/" element={<Users />} />
-              <Route path="/:name" element={<UserInfo />} />
-            </Routes>
-          </div>
-        </body>
-      </html>
-    </BrowserRouter>
-    </ClerkProvider>
+    
+      <BrowserRouter>
+        <html lang="ptbr">
+          <body className=" bg-gray-900 text-white">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <div className="bg-gray-800">
+                <Navbar />
+              </div>
+            </ThemeProvider>
+            <div className="bg-gray-900">
+
+              <Routes>
+                <Route path="/" element={<Users />} />
+                <Route path="/:name" element={<UserInfo />} />
+              </Routes>
+            </div>
+          </body>
+        </html>
+      </BrowserRouter>
+  
   );
 }
