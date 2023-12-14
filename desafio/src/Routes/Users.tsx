@@ -1,5 +1,6 @@
 
 "use client";
+
 import Loading from "../components/Loading";
 import UsersContainer from '@/components/UsersContainer';
 import React, { useEffect, useRef, useState } from 'react';
@@ -8,7 +9,7 @@ interface User {
   login: string;
   avatar_url: string;
   name?: string;
-  // Adicione outros campos conforme necessário
+ 
 }
 
 const Users: React.FC = () => {

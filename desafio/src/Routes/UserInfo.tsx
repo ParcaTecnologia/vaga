@@ -80,7 +80,7 @@ const UserInfo: React.FC = () => {
                 {uinfo.following}
               </h1>
               <h1>
-                <span className="text-teal-400">public_repositories : </span>
+                <span className="text-teal-400">public repositories : </span>
                 {uinfo.public_repos}
               </h1>
               <h1>
