@@ -38,12 +38,27 @@ V
 - Flexbox
 - Grid CSS
 - Fluxo de trabalho mobile-first
-- [React](https://reactjs.org/) -       Biblioteca Js
+- [React](https://reactjs.org/) -  Biblioteca Js
 - [Next.js](https://nextjs.org/) - React framework
 - [TailwindCSS](https://www.tailwindcss.com) - para estilos
-
 - [Vercel](https://vercel.com/) - para deploy
 - [GitHub API](https://docs.github.com/en/rest) - para dados
+
+
+## Porque optei por usar typescript
+- Tipagem Estática
+- Autocompletar 
+- Facilita a Manutenção
+- Prevenção de Erros em Tempo de Execução
+
+
+## Desafios enfrentados
+- não tive problemas para desenvolver a aplicação pois ja tenho experiencias com manipulação de Api
+
+## melhorias
+- a melhoria do frontend da aplicação, podendo criar um escopo melhor usando figma e fazer o desenvolvimento usando tailwindcss
+- adicionar um banco de dados para que cada usuario logado tenha seu proprio historico de pesquisasm isso pode ser feito usando MongoDb
+
 
 ## Agradeçimento
 
