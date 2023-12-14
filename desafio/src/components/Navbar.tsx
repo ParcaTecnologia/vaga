@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-between px-4 py-2 bg-gray-800 text-white">
+    <div className="flex items-center justify-between px-16 py-2 bg-gray-800 text-white">
       <button onClick={toggleSidebar}>
         <Image src="/menu.svg" alt="Menu" height={20} width={20} />
       </button>

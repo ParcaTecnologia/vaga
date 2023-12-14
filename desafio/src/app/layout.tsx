@@ -25,7 +25,7 @@ export default function RootLayout({
     <ClerkProvider>
     <BrowserRouter>
       <html lang="ptbr">
-        <body className="px-16 bg-gray-900 text-white">
+        <body className=" bg-gray-900 text-white">
           <div className="bg-gray-800">
             <Navbar />
           </div>
