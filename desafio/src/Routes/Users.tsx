@@ -50,12 +50,12 @@ const Users: React.FC = () => {
   return (
     <div className='flex flex-col  mt-8 '>
       <br />
-      <div className='flex items-center  dark:text-white px-16  justify-center my-5'>
+      <div className='flex items-center px-16  justify-center my-5'>
         <br />
         <input
           type="text"
           placeholder="Search or jump to…"
-          className="border border-gray-300  py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300 transition-all duration-300 flex-grow bg-slate-950 "
+          className="border border-gray-300  py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300 transition-all duration-300 flex-grow bg-slate-950 text-white"
           ref={user}
         />
         <button
