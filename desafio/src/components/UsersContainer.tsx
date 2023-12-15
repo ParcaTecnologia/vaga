@@ -22,8 +22,8 @@ const UsersContainer: React.FC<UsersContainerProps> = ({ users }) => {
           <div className='flex gap-3 items-center '>
           <img src={user?.avatar_url} className='w-12  border-4 dark:border-black border-slate-950 rounded-full' alt={`Avatar of ${user?.login}`} />
           <h1 className='text-xl dark:text-black font-semibold'>{user?.login}</h1>
-          </div>
           
+          </div>
           <h1 className='text-xs text-white font-semibold'>{user?.name}</h1>
           
           <Link to={`/${user?.login}`}>
