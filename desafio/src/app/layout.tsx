@@ -7,13 +7,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Users from '@/Routes/Users';
 import UserInfo from '@/Routes/UserInfo';
 import Navbar from '@/components/Navbar';
-
 import { ThemeProvider } from "@/components/theme-provider"
+
 
 const inter = Inter({ subsets: ['latin'] });
 
 const metadata: Metadata = {
-  title: 'desafio',
+  title: 'Desafio',
   description: 'Desafio Github',
 };
 
@@ -26,24 +26,24 @@ export default function RootLayout({
     
       <BrowserRouter>
         <html lang="ptbr">
-          <body className=" bg-gray-900 text-white">
+          <body className="text-white">
             <ThemeProvider
               attribute="class"
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
             >
-              <div className="bg-gray-800">
+              <div className="">
                 <Navbar />
               </div>
-            </ThemeProvider>
-            <div className="bg-gray-900">
+            <div className="">
 
               <Routes>
                 <Route path="/" element={<Users />} />
                 <Route path="/:name" element={<UserInfo />} />
               </Routes>
             </div>
+            </ThemeProvider>
           </body>
         </html>
       </BrowserRouter>

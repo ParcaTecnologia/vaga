@@ -18,16 +18,16 @@ const UsersContainer: React.FC<UsersContainerProps> = ({ users }) => {
   return (
     <div className='flex flex-wrap max-md:flex-col items-center gap-5 px-16 justify-center py-5'>
       {users && users.map((user: User | undefined, idx: number) => user?.login && (
-        <div key={idx} className='flex  px-4 rounded-md w-[480px] border border-gray-500 bg-gray-900  items-center justify-between'>
+        <div key={idx} className='flex  px-4 rounded-md w-[480px] border border-gray-500 bg-gray-900 dark:bg-slate-200  items-center justify-between'>
           <div className='flex gap-3 items-center '>
-          <img src={user?.avatar_url} className='w-12  border-4 border-slate-950 rounded-full' alt={`Avatar of ${user?.login}`} />
-          <h1 className='text-xl text-teal-400 font-semibold'>{user?.login}</h1>
+          <img src={user?.avatar_url} className='w-12  border-4 dark:border-black border-slate-950 rounded-full' alt={`Avatar of ${user?.login}`} />
+          <h1 className='text-xl dark:text-black font-semibold'>{user?.login}</h1>
           </div>
           
           <h1 className='text-xs text-white font-semibold'>{user?.name}</h1>
           
           <Link to={`/${user?.login}`}>
-            <span className='text-gray-200 bg-slate-800 my-3 font-semibold block px-4 py-2 tracking-wide rounded'>View</span>
+            <span className='text-gray-200 bg-slate-800 my-3 font-semibold block px-4 py-2 tracking-wide dark:bg-black rounded'>View</span>
           </Link>
         </div>
       ))}

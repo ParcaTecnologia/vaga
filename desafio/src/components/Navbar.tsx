@@ -1,7 +1,11 @@
-// Navbar.tsx
+
+"use client"
+
+
 import React, { useState } from "react";
 import Image from "next/image";
 import Sidebar from "./Sidebar";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -20,7 +24,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center gap-4 max-md:hidden">
         <Image src="/notifications.svg" alt="notifications" height={16} width={16} />
         <Image src="/plus.svg" alt="plus" height={21} width={27} />
-        
+      <DarkModeToggle />
       </div>
 
       {isSidebarOpen && <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />}
