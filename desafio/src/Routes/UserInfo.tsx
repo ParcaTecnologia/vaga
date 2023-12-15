@@ -58,7 +58,7 @@ const UserInfo: React.FC = () => {
         user.map((uinfo, i) => (
           <div
             key={i}
-            className="flex justify-center  text-white md:flex-row md:px-0 px-4  items-center flex-col"
+            className="flex justify-center  text-black dark:text-white md:flex-row md:px-0 px-4  items-center flex-col"
           >
             
             <img
@@ -98,7 +98,7 @@ const UserInfo: React.FC = () => {
             </div>
           </div>
         ))}
-      <div className="flex items-center text-white border-b pb-4 gap-6 mt-[10%] mb-6 justify-center md:text-xl ">
+      <div className="flex items-center text-black dark:text-white border-b pb-4 gap-6 mt-[10%] mb-6 justify-center md:text-xl ">
         <Tabs type={type} setType={setType} />
       </div>
       {loading && <Loading />}
