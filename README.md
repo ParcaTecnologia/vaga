@@ -1,43 +1,28 @@
+# React + TypeScript + Vite
 
-# Descrição do desafio
-Desenvolva um SPA que permitirá que um usuário pesquise repositórios no GitHub (os resultados devem ser paginados) e exiba informações relevantes de cada repositório (URL, descrição, contagem de watchers, de estrelas, issues e etc..)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Basicamente, uma tela quase parecida com essa: https://github.com/search?utf8=%E2%9C%93&q=node&type=
+Currently, two official plugins are available:
 
-URL uteis:
-- [github api](https://api.github.com/search/repositories?q=bootstrap)
-- [github doc](https://docs.github.com/pt/rest/search?apiVersion=2022-11-28)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+Aplicação com o intuito de pesquisar pelo id, nome, link e descrição de repositórios do GitHub,
+a aplicação consome uma api propria do github que contem as informações citadas acima.
 
-Você pode usar o seu framework SPA de preferencia, porém, seria desejavel testes feitos em Next.Js
+API utlizada: https://api.github.com/search/repositories?q=API_USER_GITHUB=https://api.github.com/search/
 
-A propósito, se você achar a API do Github um pouco boring demais, escolha outra coisa que você goste.
+Nesta aplicação esta sendo utilizado o framework React juntamente com a linguegem de programação TypeScript;
+O motivo da utlização do framework react com o typescript se deu por conta da familiaridade que tenho com ambos.
 
-Segue algumas ideias de API que pode ou não utilizar
+Enfrentei o dessafio de paginação com o framework axios.
+Resolvi o problema estudando e me aprofundando no framework.
 
-- [SWAPI - Star Wars API Integrations](https://pipedream.com/apps/swapi)
-- [pokeapi](https://pokeapi.co/)
+Entendo que a aplicação pode ser melhorado com um sistema que tambem possa pesquisar por nome de usuários 
+na plaforma no github, deixando a aplicação mais dinâmica.
+Para acrescentar esta funcionalidade é nescessario atualizar a função do botão de "buscar repositórios".
 
+A aplicação tambem esta responsiva.
+O modo estilização utilizado foi o css modules, assim consigo ter mais precisão na estilização dos componentes.
 
-# Requisitos mínimos
-
-- Usar um framework (de preferencia Next.js)
-- Lista items de uma API
-- Ter páginação via API
-
-# Avaliação
-
-- Código limpo e organizado
-- Semântica
-- Documentação do README
-- Segurança
-
-# Entrega
-Você deve enviar via pull request neste mesmo repositório
-
-Gostariamos de entender como você pensa e as decisões que você tomou durante o desenvolvimento. Então, quando for enviar seu pull request, por favor responda:
-
-- Qual ferramentas e bibliotecas (libraries, framework, tools etc) você usou
-- Porque você optou pela tecnologia X
-- Desafios que você enfrentou e como resolveu
-- O que você entende que pode ser melhorado e como fazer isso
+Link da aplicação: https://mimir-search.vercel.app
